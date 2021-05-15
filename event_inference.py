@@ -1,7 +1,7 @@
 """
-Event-predictive inference system
+CAPRI
 
-This system learns probabilistic event schemata for observed sensorimotor interactions.
+CAPRI learns probabilistic event schemata for observed sensorimotor interactions.
 Each schemata has a particular structure:
 - It has a starting condition encoding where in the space of observation this event typically starts
 - It has an event dynamics model, encoding how sensory information changes during the event
@@ -10,12 +10,12 @@ Each schemata has a particular structure:
 During training these event schemata are learned using supervised training. During testing, the
 event schemata is inferred based on new observations and likelihoods produced by the event schemata.
 
-The system can also infer desired policies. In this implementation the system infers its policy with
+CAPRI can also infer desired policies. In this implementation the system infers its policy with
 the aim to minimize predicted uncertainty about future events and event boundaries. We use this to
 model the goal-predictive gaze in infants.
 
-For more information, see our paper: Emergence of Goal-Anticipations in Infants - A Computational Modeling Approach
-(2020), C. Gumbsch, M. Adam, B. Elsner, & M.V. Butz
+For more information, see our paper: Emergent Goal-Anticipatory Gaze in Infants via Event-Predictive Learning and Inference
+(2021), C. Gumbsch, M. Adam, B. Elsner, & M.V. Butz
 """
 
 import numpy as np
